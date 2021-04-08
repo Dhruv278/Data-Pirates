@@ -4,8 +4,8 @@ const mongoose=require('mongoose')
 const globalerror=require('./errorHandling/GlobalError')
 const app=express();
 const path=require('path');
-
-
+const ProfessorsController=require('./Controllers/professor')
+const multer=require('./Controllers/Multer');
 const dotenv=require('dotenv')
 const cookieparser=require('cookie-parser')
 app.use(cookieparser())
@@ -19,15 +19,19 @@ mongoose.connect(db,{
 }).then(con => console.log('database is connected'));
 
 
+app.use(express.static(path.join(__dirname, '/Public')));
+
+
 
 
 app.use(express.json({ limit: '10kb' }));
 app.use(express.static(path.join(__dirname,'Public')))
-app.set('view engine','pug')
+app.set('view engine','ejs')
 app.set('views',path.join(__dirname,'views/'));
 
 app.use(globalerror)
-
+app.post('/createProfessors',multer.uploadPhoto,ProfessorsController.addProfessor);
+app.get('/allProfessors',ProfessorsController.getAllProfessors);
 const port=process.env.PORT ||3000;
 
 const server=app.listen(port,()=>{

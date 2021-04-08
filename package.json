@@ -16,8 +16,9 @@
     "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
-    "ejs": "^3.1.5",
+    "ejs": "^3.1.6",
     "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
     "firebase": "^7.20.0",
     "helmet": "^4.1.1",
     "hpp": "^0.2.3",
@@ -32,6 +33,7 @@
     "promisify": "0.0.3",
     "pug": "^3.0.0",
     "sharp": "^0.26.0",
+    "validator": "^13.5.2",
     "xss-clean": "^0.1.1"
   },
   "devDependencies": {},
