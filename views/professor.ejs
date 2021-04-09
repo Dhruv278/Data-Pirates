@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SCET CO DEPARTMENT</title>
+    <meta name="description" content="Free Bootstrap Theme by ProBootstrap.com">
+    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+    
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="./Sagar_css/css/styles-merged.css">
+    <link rel="stylesheet" href="/Sagar_css/css/style.min.css">
+    <link rel="stylesheet" href="/Sagar_css/css/custom.css">
+
+  </head>
+  <body>
+
+    <div class="probootstrap-search" id="probootstrap-search">
+      <a href="#" class="probootstrap-close js-probootstrap-close"><i class="icon-cross"></i></a>
+      <form action="#">
+        <input type="search" name="s" id="search" placeholder="Search a keyword and hit enter...">
+      </form>
+    </div>
+    
+    <div class="probootstrap-page-wrapper">
+      <!-- Fixed navbar -->
+      
+      <nav class="navbar navbar-default probootstrap-navbar">
+        <div class="container">
+          <div class="navbar-header">
+            <div class="btn-more js-btn-more visible-xs">
+              <a href="#"><i class="icon-dots-three-vertical "></i></a>
+            </div>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            
+               <!--mine-->
+               <a  href="/" class ="nav_heading" title="SCET"><img src="/Akash_css/img/logomain.jpg" style="
+                margin-top: 10px;
+                height: 66px;
+            "> | COMPUTER DEPARTMENT
+        </a>
+                <span class="v1"></span>
+                <span class="name"><b><a class="font-color-size" href="/">COMPUTER DEPARTMENT</a></b></span>
+                <!---->
+          </div>
+
+          <div id="navbar-collapse" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="/">Home</a></li>
+              <li><a href="/research">Research</a></li>
+              <li><a href="/allProfessors">Faculty</a></li>
+              <li><a href="/event">Events</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          </div>
+        </div>
+      </nav>
+      
+      <section class="probootstrap-section probootstrap-section-colored">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-left section-heading probootstrap-animate">
+              <h1>Our Faculty Members</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="probootstrap-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="probootstrap-flex-block">
+                <div class="probootstrap-text probootstrap-animate">
+                  <h3>We Hired Certified Teachers For Our Students</h3>
+                  <p>“Teaching is a very noble profession that shapes the character, caliber, and future of an individual. If the people remember me as a good teacher that will be the biggest honour for me”  :-  A. P. J. Abdul Kalam</p>
+                  <!--<p><a href="#" class="btn btn-primary">Learn More</a></p>-->
+                </div>
+                <!--<div class="probootstrap-image probootstrap-animate" style="background-image: url(img/slider_3.jpg)">
+                  <a href="https://vimeo.com/45830194" class="btn-video popup-vimeo"><i class="icon-play3"></i></a>
+                </div>-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      
+      
+      <section class="probootstrap-section">
+        <div class="container color">
+          <div class="row">
+              <% for(var professor of AllProfessors){ %>
+                <div class="col-md-3 col-sm-6">
+                    <div class="probootstrap-teacher text-center probootstrap-animate">
+                      <figure class="media">
+                        <img src="/photo/<%=professor.photo %>" alt="Free Bootstrap Template by ProBootstrap.com" class="img-responsive">
+                      </figure>
+                      <div class="text">
+                        <h3><%=professor.name %></h3>
+                          <p><b>Designation:</b> <%=professor.designation%><br><b>Qualification:</b> <%= professor.Qualification %><br><b>Experience:</b> <%= professor.experience %> years<br><b>Email:</b><%= professor.email %></p>
+                        <!--<ul class="probootstrap-footer-social">
+                          <li class="twitter"><a href="#"><i class="icon-twitter"></i></a></li>
+                          <li class="facebook"><a href="#"><i class="icon-facebook2"></i></a></li>
+                          <li class="instagram"><a href="#"><i class="icon-instagram2"></i></a></li>
+                          <li class="google-plus"><a href="#"><i class="icon-google-plus"></i></a></li>
+                        </ul>-->
+                      </div>
+                    </div>
+                  </div>
+                    <% } %>
+
+          </div>
+        </div>
+      </section>
+      
+      <section class="probootstrap-cta">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="probootstrap-animate" data-animate-effect="fadeInRight">Get your admission now!</h2>
+              <!--<a href="#" role="button" class="btn btn-primary btn-lg btn-ghost probootstrap-animate" data-animate-effect="fadeInLeft">Enroll</a>-->
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="probootstrap-footer probootstrap-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="probootstrap-footer-widget">
+                <h3>About CO Department</h3>
+                <p>The department imparts high quality technical education to its students with the help of its state-of-the-art computing facilities and highly qualified teaching staff as well as supporting staff. The department offers bachelor’s degree in computer engineering that covers the latest subjects in the variety of areas like computer hardware, software, networking, microprocessors, operating systems, database management, artificial intelligence, information security, web technologies etc.</p>
+                <h3>Social</h3>
+                <ul class="probootstrap-footer-social">
+                  <li><a href="#"><i class="icon-twitter"></i></a></li>
+                  <li><a href="#"><i class="icon-facebook"></i></a></li>
+                  <li><a href="#"><i class="icon-github"></i></a></li>
+                  <li><a href="#"><i class="icon-dribbble"></i></a></li>
+                  <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                  <li><a href="#"><i class="icon-youtube"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-md-push-1">
+              <div class="probootstrap-footer-widget">
+                <h3>Links</h3>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Courses</a></li>
+                  <li><a href="#">Teachers</a></li>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="probootstrap-footer-widget">
+                <h3>Contact Info</h3>
+                <ul class="probootstrap-contact-info">
+                  <li><i class="icon-location2"></i> <span>Sarvajanik College of Engineering and      Technology,Dr. R.K. Desai Marg,
+                    Opp. Mission Hospital,
+                    Athwalines,
+                    Surat – 395001
+                    Gujarat,
+                    India</span></li>
+                  <li><i class="icon-mail"></i><span>info@scet.ac.in</span></li>
+                  <li><i class="icon-phone2"></i><span>91-0261-2240146/47/48 </span></li>
+                </ul>
+              </div>
+            </div>
+           
+          </div>
+          <!-- END row -->
+          
+        </div>
+
+         <div class="probootstrap-copyright">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 text-left">
+                <p>&copy; 2021 All Rights Reserved. Designed &amp; Developed by Team Cobweb</p>
+              </div>
+              <div class="col-md-4 probootstrap-back-to-top">
+                <p><a href="#" class="js-backtotop">Back to top <i class="icon-arrow-long-up"></i></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+    <!-- END wrapper -->
+    
+
+    <script src="/Sagar_css/js/scripts.min.js"></script>
+    <script src="/Sagar_css/js/main.min.js"></script>
+    <script src="/Sagar_css/js/custom.js"></script>
+
+  </body>
+</html>

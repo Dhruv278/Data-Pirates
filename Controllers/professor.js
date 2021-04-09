@@ -18,8 +18,6 @@ exports.addProfessor=catchAsync(async(req,res,next)=>{
 
 exports.getAllProfessors=catchAsync(async(req,res,next)=>{
     const AllProfessors=await Professor.find();
-    res.status(200).json({
-        AllProfessors
-    })
+    res.status(200).render('professor',{AllProfessors})
 })
 

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Computer Department</title>
+    <meta name="description" content="Free Bootstrap Theme by ProBootstrap.com">
+    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+    
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="/Sagar_css/css/styles-merged.css">
+    <link rel="stylesheet" href="/common.css">
+    <link rel="stylesheet" href="/Sagar_css/css/style.min.css">
+    <link rel="stylesheet" href="/Sagar_css/css/custom.css">
+  </head>
+  <body>
+
+    <div class="probootstrap-search" id="probootstrap-search">
+      <a href="#" class="probootstrap-close js-probootstrap-close"><i class="icon-cross"></i></a>
+      <form action="#">
+        <input type="search" name="s" id="search" placeholder="Search a keyword and hit enter...">
+      </form>
+    </div>
+    
+    <div class="probootstrap-page-wrapper">
+      <!-- Fixed navbar -->
+       
+      <nav class="navbar navbar-default probootstrap-navbar">
+        <div class="container">
+          <div class="navbar-header">
+            <div class="btn-more js-btn-more visible-xs">
+              <a href="#"><i class="icon-dots-three-vertical "></i></a>
+            </div>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a  href="/" class ="nav_heading" title="SCET"><img src="/Akash_css/img/logomain.jpg" style="
+                margin-top: 10px;
+                height: 66px;
+            "> | COMPUTER DEPARTMENT
+        </a>
+          </div>
+
+          <div id="navbar-collapse" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="/research">Research</a></li>
+                <li><a href="/allProfessors">Faculty</a></li>
+                <li><a href="/event">Events</a></li>
+
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      <section class="probootstrap-section probootstrap-section-colored">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-left section-heading probootstrap-animate">
+              <h1><%=research.name%></h1>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="probootstrap-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="probootstrap-flex-block">
+                <div class="probootstrap-text probootstrap-animate">
+                  <!--<div class="text-uppercase probootstrap-uppercase">Featured Details</div>-->
+                  <h3><%=research.name%> Details</h3>
+                  <%for(var para of research.discription.split(":")){ %>
+                    <p> <%= para%></p>
+                    <% } %>
+                  
+                
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="probootstrap-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center section-heading probootstrap-animate">
+              <h2>Research under Faculty members</h2>
+              <!--<p class="lead">Sed a repudiandae impedit voluptate nam Deleniti dignissimos perspiciatis nostrum porro nesciunt</p>-->
+            </div>
+          </div>
+          <!-- END row -->
+
+          <div class="row color">
+              <% for(var professor of research.faculties){ %>
+                <div class="col-md-3 col-sm-6">
+                    <div class="probootstrap-teacher text-center probootstrap-animate">
+                      <figure class="media">
+                        <img src="/photo/<%=professor.photo %>" alt="Faculty-1" class="img-responsive">
+                      </figure>
+                      <div class="text">
+                        <h3><%=professor.name %></h3>
+                          <p><b>Designation:</b> <%=professor.designation%><br><b>Qualification:</b> <%= professor.Qualification %><br><b>Experience:</b> <%= professor.experience %> years<br><b>Email:</b><%= professor.email %></p>
+                      </div>
+                    </div>
+                  </div>
+              <%}%>
+           
+            <div class="clearfix visible-sm-block visible-xs-block"></div>
+          </div>
+          
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center section-heading probootstrap-animate">
+             <p>
+                 
+             </p>
+              <h2>Students taken part</h2>
+             
+            </div>
+          </div>
+          
+          <!--student data -->
+          <div class="row color">
+              <%for(var student of research.students){ %> 
+
+                 <div class="col-md-3 col-sm-6">
+                    <div class="probootstrap-teacher text-center probootstrap-animate">
+                      <figure class="media">
+                        <img src="/photo/<%=student.photo %>" alt="student-1" class="img-responsive">
+                      </figure>
+                      <div class="text">
+                          <h3><%=student.name%></h3>
+                          <p><b>Branch:</b> <%=student.department%><br><b>PassOut Year:</b><%=student.PassOutYear%></p>
+                      
+                      </div>
+                    </div>
+                  </div>
+
+              <%}%>
+
+        </div>
+      </section>
+      
+      <section class="probootstrap-cta">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="probootstrap-animate" data-animate-effect="fadeInRight">Get your admission now!</h2>
+              <!--<a href="#" role="button" class="btn btn-primary btn-lg btn-ghost probootstrap-animate" data-animate-effect="fadeInLeft">Enroll</a>-->
+            </div>
+          </div>
+        </div>
+      </section> <section class="probootstrap-cta">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="probootstrap-animate" data-animate-effect="fadeInRight">Get your admission now!</h2>
+              <!--<a href="#" role="button" class="btn btn-primary btn-lg btn-ghost probootstrap-animate" data-animate-effect="fadeInLeft">Enroll</a>-->
+            </div>
+          </div>
+        </div>
+      </section>     <footer class="probootstrap-footer probootstrap-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="probootstrap-footer-widget">
+                <h3>About The Department</h3>
+                <p>
+                    The department imparts high quality technical education to its students with the help of its state-of-the-art computing facilities and highly qualified teaching staff as well as supporting staff. The department offers bachelor’s degree in computer engineering that covers the latest subjects in the variety of areas like computer hardware, software, networking, microprocessors, operating systems, database management, artificial intelligence, information security, web technologies etc.
+                </p>
+                <h3>Social</h3>
+                <ul class="probootstrap-footer-social">
+                  <li>
+                    <a href="#"><i class="icon-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="icon-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="icon-github"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="icon-dribbble"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="icon-linkedin"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="icon-youtube"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-md-push-1">
+              <div class="probootstrap-footer-widget">
+                <h3>Links</h3>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="courses.html">Research</a></li>
+                  <li><a href="teachers.html">Faculty</a></li>
+                  <li><a href="news.html">News</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="probootstrap-footer-widget">
+                <h3>Contact Info</h3>
+                <ul class="probootstrap-contact-info">
+                  <li>
+                    <i class="icon-location2"></i>
+                    <span
+                      >Sarvajanik College of Engineering and Technology,Dr. R.K.
+                      Desai Marg, Opp. Mission Hospital, Athwalines, Surat –
+                      395001 Gujarat, India
+                    </span>
+                  </li>
+                  <li><i class="icon-mail"></i><span>info@scet.ac.in</span></li>
+                  <li>
+                    <i class="icon-phone2"></i
+                    ><span>+91-0261-2240146/47/48</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- END row -->
+        </div>
+        <p>
+            <img src="http://scet.ac.in/wp-content/uploads/2014/07/Flogo.png" alt="Sarvajanik College of Engineering &amp; Technology">
+<span style="color:white;">Copyright © 2007 - <script type="text/javascript">
+var d = new Date()
+document.write(d.getFullYear())
+</script> Sarvajanik College of Engineering &amp; Technology. <br>
+</span>
+
+
+<!--- Designed & Developed By Urvin Mistry | Urvinmistry.cf --->                      </p>
+      </footer>
+    <!-- END wrapper -->
+    
+
+    <script src="/Sagar_css/js/scripts.min.js"></script>
+    <script src="/Sagar_css/js/main.min.js"></script>
+    <script src="/Sagar_css/js/custom.js"></script>
+
+  </body>
+</html>

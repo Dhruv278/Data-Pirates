@@ -1,9 +1,13 @@
+const appError = require('../errorHandling/ErrorFormate');
 const  catchAsync=require('./../errorHandling/cathError');
 const Research=require('./../Schema/research');
 const Student =require('./../Schema/student');
 exports.CreateResearch=catchAsync(async(req,res,next)=>{
     let research={};
+    console.log(req.body.name);
     research.name=req.body.name;
+    research.short_discription=req.body.short_discription;
+    research.photo=req.body.photo;
     research.discription=req.body.discription;
     research.faculties=req.body.faculties;
     research.students=req.body.students;
@@ -33,4 +37,11 @@ exports.GetAllStudents=catchAsync(async(req,res,next)=>{
     res.status(200).json({
         students
     })
+})
+
+exports.getSingleResearch=catchAsync(async(req,res,next)=>{
+    const id=req.params.id;
+    const research=await Research.findById(id).populate('faculties').populate('students');
+    if(!research)return next (new appError('Please use valid id ',500))
+    res.status(200).render('research',{research})
 })

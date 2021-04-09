@@ -13,6 +13,7 @@ const ResearchSchema = mongoose.Schema({
     discription:String,
     photo:String,
     department:String,
+    short_discription:String,
     faculties:[{
         type: mongoose.Schema.ObjectId,
         ref: 'Professor'
