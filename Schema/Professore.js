@@ -16,18 +16,12 @@ const ProfessorSchema = mongoose.Schema({
         lowercase: true,
         unique: true,
         validate: [validate.isEmail, 'please enter the valid email'],
-        validate:{
-            validator: function(el) {
-                return el.match(/^[\w.+\-]+@gmail\.com$/)
-              },
-              message: 'plaese use gmail or yahoo or hotmail'
-        }
-
         },
    
     designation: {
         type: String,
     },
+    Qualification:String,
     photo:String,
     department:String,
     experience:Number,

@@ -13,12 +13,12 @@ const StudentSchema = mongoose.Schema({
     department:String,
     photo:String,
     PassOutYear:String,
-    branch:String,
+
     
     
 
 
 });
 
-const Student = mongoose.model('Professor', StudentSchema);
+const Student = mongoose.model('Student', StudentSchema);
 module.exports = Student;

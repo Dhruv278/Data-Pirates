@@ -9,6 +9,7 @@ exports.addProfessor=catchAsync(async(req,res,next)=>{
     professor.experience=req.body.experience;
     professor.department=req.body.department;
     professor.email=req.body.email;
+    professor.Qualification=req.body.Qualification;
     const newProfessor=await Professor.create(professor);
     res.status(200).json({
         professor:newProfessor

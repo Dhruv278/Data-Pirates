@@ -1,5 +1,5 @@
 var multer = require('multer')
-
+var appError=require('./../errorHandling/ErrorFormate');
 let storage = multer.diskStorage({
   destination: function (req, file, cb) {
     cb(null, "./Public/photo/")

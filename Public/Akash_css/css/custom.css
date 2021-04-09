@@ -1,0 +1,130 @@
+/* Your custom css code goes here */
+.flexslider-2,
+.flexslider-2 .slides > li,
+.slider-height {
+  height: 600px;
+}
+.flexslider-2 {
+  z-index: 2;
+  background: 0 0;
+  border: none;
+  margin: 0;
+}
+.flexslider-2 .probootstrap-subheading {
+  font-size: 20px;
+}
+.flexslider-2 .probootstrap-slider-text {
+  margin-top: 300px;
+}
+@media screen and (max-width: 480px) {
+  .flexslider-2,
+  .flexslider-2 .slides > li,
+  .slider-height {
+    height: 400px;
+  }
+  .flexslider-2 .probootstrap-slider-text {
+    margin-top: 150px;
+  }
+  .flexslider-2 .flex-direction-nav {
+    display: none;
+  }
+}
+.mt0,
+.owl-carousel .owl-controls,
+.owl-carousel-posts .owl-controls {
+  margin-top: 0;
+}
+.flexslider-2 .slides > li {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: none;
+}
+.flexslider-2 .slides > li.overlay:before {
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+}
+.flexslider-2 .flex-control-paging {
+  position: absolute;
+  bottom: 30px;
+  z-index: 20;
+}
+.flexslider-2 .flex-direction-nav a {
+  text-decoration: none;
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 10;
+  overflow: hidden;
+  opacity: 0;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 0;
+  padding: 30px;
+}
+.flexslider-2 .flex-direction-nav a:before {
+  font-family: icomoon;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  content: "\e929";
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  font-size: 30px;
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.8);
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.flexslider-2 .flex-direction-nav a.flex-next:before {
+  content: "\e92a";
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.flex-direction-nav .flex-prev {
+  left: 0;
+}
+.flex-direction-nav .flex-next {
+  right: 0;
+  text-align: right;
+}
+.flexslider-2:hover .flex-direction-nav .flex-prev {
+  opacity: 0.7;
+  left: 0;
+}
+.flexslider-2:hover .flex-direction-nav .flex-prev:hover {
+  opacity: 1;
+}
+.flexslider-2:hover .flex-direction-nav .flex-next {
+  opacity: 0.7;
+  right: 0;
+}
+
+.course-section-1 {
+  background-color: #f7f7f7;
+}
+
+.change {
+  height: 296px;
+}
+
+.h3-about {
+  margin: 0px 17px 17px;
+}

@@ -25,5 +25,5 @@ const ResearchSchema = mongoose.Schema({
 
 });
 
-const Research = mongoose.model('Professor', ResearchSchema);
+const Research = mongoose.model('Research', ResearchSchema);
 module.exports = Research;

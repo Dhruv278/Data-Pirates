@@ -6,6 +6,8 @@ const app=express();
 const path=require('path');
 const ProfessorsController=require('./Controllers/professor')
 const multer=require('./Controllers/Multer');
+const ResearchController=require('./Controllers/research');
+const viewController=require('./Controllers/viewController');
 const dotenv=require('dotenv')
 const cookieparser=require('cookie-parser')
 app.use(cookieparser())
@@ -30,9 +32,14 @@ app.set('view engine','ejs')
 app.set('views',path.join(__dirname,'views/'));
 
 app.use(globalerror)
+app.get('/',viewController.index)
 app.post('/createProfessors',multer.uploadPhoto,ProfessorsController.addProfessor);
 app.get('/allProfessors',ProfessorsController.getAllProfessors);
+app.post('/createResearch',ResearchController.CreateResearch);
+app.post('/CreateStudent',multer.uploadPhoto,ResearchController.CreateStudent);
+app.get('/getAllStudent',ResearchController.GetAllStudents);
 const port=process.env.PORT ||3000;
+
 
 const server=app.listen(port,()=>{
     console.log(`server is listing on port ${port}`);
