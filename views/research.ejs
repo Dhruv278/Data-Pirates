@@ -10,6 +10,7 @@
     <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
     
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Open+Sans" rel="stylesheet">
+    <link rel="shortcut icon" href="/Akash_css/img/logo3.jpg" type="image/x-icon"> 
     <link rel="stylesheet" href="/Sagar_css/css/styles-merged.css">
     <link rel="stylesheet" href="/common.css">
     <link rel="stylesheet" href="/Sagar_css/css/style.min.css">
@@ -26,39 +27,47 @@
     
     <div class="probootstrap-page-wrapper">
       <!-- Fixed navbar -->
-       
       <nav class="navbar navbar-default probootstrap-navbar">
         <div class="container">
           <div class="navbar-header">
             <div class="btn-more js-btn-more visible-xs">
-              <a href="#"><i class="icon-dots-three-vertical "></i></a>
+              <a href="#"><i class="icon-dots-three-vertical"></i></a>
             </div>
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#navbar-collapse"
+              aria-expanded="false"
+              aria-controls="navbar"
+            >
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
+
             <a  href="/" class ="nav_heading" title="SCET"><img src="/Akash_css/img/logomain.jpg" style="
-                margin-top: 10px;
-                height: 66px;
-            "> | COMPUTER DEPARTMENT
-        </a>
+              margin-top: 10px;
+              height: 66px;
+          ">  COMPUTER DEPARTMENT
+      </a>
           </div>
 
-          <div id="navbar-collapse" class="navbar-collapse collapse">
+          <div id="navbar-collapse" style="
+          height: 300px;
+      " class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="/">Home</a></li>
-                <li><a href="/getAllReseaarches">Research</a></li>
-                <li><a href="/allProfessors">Faculty</a></li>
-                <li><a href="/event">Events</a></li>
-
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="/">Home</a></li>
+              <li><a href="/getAllReseaarches">Research</a></li>
+              <li><a href="/allProfessors">Faculty</a></li>
+              <li><a href="/event">Events</a></li>
+              <!-- <li><a href="gallery.html">Gallery</a></li> -->
+              <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
         </div>
       </nav>
-      
       <section class="probootstrap-section probootstrap-section-colored">
         <div class="container">
           <div class="row">
@@ -78,7 +87,10 @@
                   <!--<div class="text-uppercase probootstrap-uppercase">Featured Details</div>-->
                   <h3><%=research.name%> Details</h3>
                   <%for(var para of research.discription.split(":")){ %>
-                    <p> <%= para%></p>
+                    <p style="
+                    font-weight: 500;
+                    color: black;
+                "> <%= para%></p>
                     <% } %>
                   
                 
@@ -95,13 +107,15 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6 col-md-offset-3 text-center section-heading probootstrap-animate">
-              <h2>Research under Faculty members</h2>
+              <h2 style="
+              font-weight: 500;
+          ">Faculty Involved</h2>
               <!--<p class="lead">Sed a repudiandae impedit voluptate nam Deleniti dignissimos perspiciatis nostrum porro nesciunt</p>-->
             </div>
           </div>
           <!-- END row -->
 
-          <div class="row color">
+          <div class="row color" style="margin-bottom: 70px;">
               <% for(var professor of research.faculties){ %>
                 <div class="col-md-3 col-sm-6">
                     <div class="probootstrap-teacher text-center probootstrap-animate">
@@ -114,23 +128,26 @@
                       </div>
                     </div>
                   </div>
+                 
               <%}%>
            
             <div class="clearfix visible-sm-block visible-xs-block"></div>
           </div>
           
-          <div class="row">
-            <div class="col-md-6 col-md-offset-3 text-center section-heading probootstrap-animate">
+          <div class="row" >
+            <div class="col-md-6 col-md-offset-3 text-center  probootstrap-animate">
              <p>
                  
              </p>
-              <h2>Students taken part</h2>
+              <h2 style="
+              font-weight: 500;
+          ">Students Involved</h2>
              
             </div>
           </div>
           
           <!--student data -->
-          <div class="row color">
+          <div class="row color" >
               <%for(var student of research.students){ %> 
 
                  <div class="col-md-3 col-sm-6">
@@ -161,7 +178,7 @@
               >
               <span class="probootstrap-icon">
                 <i class="icon-quotes-left"></i>
-              </span>SCET students create and apply knowledge by thinking and doing, preparing for leadership in a rapidly changing world. <span class="probootstrap-icon">
+              </span>We ought to pursue inspired inclinations because there is every chance that some creations will turn out to be immensely valuable. <span class="probootstrap-icon">
                 <i class="icon-quotes-right"></i>
               </span>
               </h2>
@@ -185,16 +202,7 @@
                   <li>
                     <a href="https://www.facebook.com/SCET.Social" target="_blank"><i class="icon-facebook"></i></a>
                   </li>
-                  <li>
-                    <a href="#"><i class="icon-github"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="icon-dribbble"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="icon-linkedin"></i></a>
-                  </li>
-                  <li>
+  
                     <a href="https://www.youtube.com/channel/UCXy4Mvs64zNQl407vInl6fw" target="_blank"><i class="icon-youtube"></i></a>
                   </li>
                 </ul>
@@ -204,11 +212,11 @@
               <div class="probootstrap-footer-widget">
                 <h3>Links</h3>
                 <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="courses.html">Research</a></li>
-                  <li><a href="teachers.html">Faculty</a></li>
-                  <li><a href="news.html">News</a></li>
-                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/getAllReseaarches">Research</a></li>
+                  <li><a href="/allProfessors">Faculty</a></li>
+                  <!-- <li><a href="news.html">News</a></li> -->
+                  <li><a href="/contact">Contact</a></li>
                 </ul>
               </div>
             </div>

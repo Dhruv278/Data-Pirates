@@ -41,6 +41,8 @@ app.get('/research/:id',ResearchController.getSingleResearch)
 app.get('/getAllStudent',ResearchController.GetAllStudents);
 app.get('/getAllReseaarches',ResearchController.GetAllResearches);
 app.get('/event',viewController.event);
+app.get('/contact',viewController.contact)
+app.post('/sendMail',viewController.sendMail);
 const port=process.env.PORT ||3000;
 
 

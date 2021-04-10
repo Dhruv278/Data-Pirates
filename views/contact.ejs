@@ -1,9 +1,11 @@
 <!DOCTYPE html>
+
+
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="/Akash_css/img/logo3.jpg" type="image/x-icon">  
+    <link rel="shortcut icon" href="img/favicon_io/tab_icon.png" type="image/tab_icon">
     <title>Sarvajank College Of Engineering & Technology &mdash;</title>
     <meta
       name="description"
@@ -18,9 +20,11 @@
       href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Open+Sans"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="/Akash_css/img/logo3.jpg" type="image/x-icon"> 
     <link rel="stylesheet" href="/Akash_css/css/styles-merged.css" />
     <link rel="stylesheet" href="/Akash_css/css/style.min.css" />
     <link rel="stylesheet" href="/Akash_css/css/custom.css" />
+
   </head>
   <body>
     <div class="probootstrap-search" id="probootstrap-search">
@@ -40,6 +44,31 @@
     <div class="probootstrap-page-wrapper">
       <!-- Fixed navbar -->
 
+      <div class="probootstrap-header-top" style="background-color: lavender">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-lg-9 col-md-9 col-sm-9 probootstrap-top-quick-contact-info"
+            >
+              <span><i class="icon-location2"></i>For any inquiry</span>
+              <span><i class="icon-phone2"></i>: +91-0261-2240146/47/48</span>
+              <span><i class="icon-mail"></i>info@scet.ac.in</span>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 probootstrap-top-social">
+              <ul>
+               
+                <li>
+                  <a
+                    href="#"
+                    class="probootstrap-search-icon js-probootstrap-search"
+                    ><i class="icon-search"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
       <nav class="navbar navbar-default probootstrap-navbar">
         <div class="container">
           <div class="navbar-header">
@@ -60,10 +89,10 @@
               <span class="icon-bar"></span>
             </button>
 
-            <a  href="/" class ="nav_heading" title="SCET"style="
+            <a  href="/" class ="nav_heading" title="SCET" style="
             color: black;
-            font-weight: 900;
-        " ><img src="/Akash_css/img/logomain.jpg" style="
+            font-weight: 600;
+        "><img src="/Akash_css/img/logomain.jpg" style="
               margin-top: 10px;
               height: 66px;
           "> COMPUTER DEPARTMENT
@@ -83,105 +112,102 @@
         </div>
       </nav>
 
+
       <section class="probootstrap-section probootstrap-section-colored">
         <div class="container">
           <div class="row">
             <div
               class="col-md-12 text-left section-heading probootstrap-animate"
             >
-              <h1>RESEARCH</h1>
-              <h2>A culture of collaboration that drives innovative discoveries vital to our world, our health and our intellectual life</h2>
+              <h1 class="mb0">Contact Us</h1>
             </div>
           </div>
         </div>
       </section>
-      
-      <section class="probootstrap-section" style="
-      padding: 1rem;
-  ">
+
+      <section class="probootstrap-section probootstrap-section-sm">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <div class="probootstrap-flex-block">
-                <div class="probootstrap-text probootstrap-animate">
-                  <div class="text-uppercase probootstrap-uppercase">
-                    <!-- Featured Course -->
+              <div class="row probootstrap-gutter0">
+                <div class="col-md-4" id="probootstrap-sidebar">
+                  <div
+                    class="probootstrap-sidebar-inner probootstrap-overlap probootstrap-animate"
+                  >
+                    <h3>Pages</h3>
+                    <ul class="probootstrap-side-menu">
+                      <li><a href="/">Home</a></li>
+                      <li><a href="/getAllReseaarches">Research</a></li>
+                      <li><a href="/allProfessors">Faculty</a></li>
+                      <li><a href="/event">Events</a></li>
+                      <li class="active"><a>Contact Us</a></li>
+                    </ul>
                   </div>
-                  <h2>The Research Enterprise</h2>
-                  <p> <span style="font-size: 23px; font-family: Source Serif Pro,Georgia,Times,Times New Roman,serif!important; ">With an innovative and interdisciplinary mindset, SCET places a strong emphasis on encouraging and enabling any student to carry out research. It’s an ecosystem strategically created to help foster ideas, provide the resources to help build them up, and then take them from labs to commercialization.</span>
-                    
-                  
-                  </p><br>
-                  
-                 
                 </div>
                 <div
-                  class="probootstrap-image probootstrap-animate"
-                  style="background-image: url(/Akash_css/img/AI_to_write_a_book.png)"
+                  class="col-md-7 col-md-push-1 probootstrap-animate"
+                  id="probootstrap-content"
                 >
-                  
+                  <h2>Get In Touch</h2>
+                  <p>Contact with our Admin</p>
+                  <form  class="probootstrap-form">
+                    <div class="form-group">
+                      <label for="name"><b>Full Name</b></label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        name="name"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="email"><b>Email</b></label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        name="email"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="subject"><b>Subject</b></label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="subject"
+                        name="subject"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="message"><b>Message</b></label>
+                      <textarea
+                        cols="30"
+                        rows="10"
+                        class="form-control"
+                        id="message"
+                        name="message"
+                        required
+                      ></textarea>
+                    </div>
+                    <div class="form-group">
+                      <button
+                        class="btn btn-primary btn-lg"
+                        id="submit"
+                      >
+                        Send Mail
+                      </button>
+                    </div>
+                  </form>
                 </div>
-                <p><h3 class="research-para vertical-line"><p class=""> </p><span class="probootstrap-icon">
-                  <i class="icon-quotes-left"></i>
-                </span style="
-                font-size: 20px;
-            ">From Nobel Prize winners to undergraduates, all members of the SCET community are engaged in creating new knowledge. <span class="probootstrap-icon">
-                  <i class="icon-quotes-right"></i>
-                </span><p> </p></h3>   
-                </p>
-                  <p><h3 class="research-para" style="
-                    font-size: 25px;
-                ">The Institute's extraordinary faculty, students, postdoctoral scholars, and staff are expanding our understanding of the universe, shifting paradigms, launching new fields, and inventing the technologies of the future. They are producing transformative breakthroughs in fields ranging from quantum science and engineering to bioinformatics and the nature of life itself, from human behavior and economics to energy and sustainability.</h3>   
-                  </p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      
-      <section class="probootstrap-section" style="
-      padding: 1rem;
-  ">
-        <div class="container">
-          <div class="row">
-              <% for(var research of researches){ %>
-                <div class="col-md-6">
-                    <div class="probootstrap-service-2 probootstrap-animate">
-                      <div class="image">
-                        <div class="image-bg">
-                          <img
-                            src="/Akash_css/img/<%=research.photo %>"
-                            alt="Free Bootstrap Template by ProBootstrap.com"
-                            style="
-                           height: 157px;
-                             "
-                          />
-                        </div>
-                      </div>
-                      <div class="text">
-                        <span class="probootstrap-meta"
-                          ><i class="icon-calendar2"></i><%= research.date %> </span>
-                        <h3><%= research.name %></h3>
-                        <p>
-                            <%= research.short_discription %>
-                        </p>
-                        <p>
-                          <a href="/research/<%=research.id %>" class="btn btn-primary">Know More</a>
-              
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- <hr style="height:2px;border-width:0;color:gray;background-color:gray" /> -->
-              <% } %>
-           
-            
-          </div>
-
-          
-        </div>
-      </section>
       <section class="probootstrap-cta">
         <div class="container">
           <div class="row">
@@ -202,7 +228,6 @@
           </div>
         </div>
       </section>
-      
       <footer class="probootstrap-footer probootstrap-bg">
         <div class="container">
           <div class="row">
@@ -218,7 +243,7 @@
                   <li>
                     <a href="https://www.facebook.com/SCET.Social" target="_blank"><i class="icon-facebook"></i></a>
                   </li>
-              
+                 
                   <li>
                     <a href="https://www.youtube.com/channel/UCXy4Mvs64zNQl407vInl6fw" target="_blank"><i class="icon-youtube"></i></a>
                   </li>
@@ -231,9 +256,9 @@
                 <ul>
                   <li><a href="/">Home</a></li>
                   <li><a href="/getAllReseaarches">Research</a></li>
-                  <li><a href="allProfessors">Faculty</a></li>
-                  
-                  <li><a href="/contact">Contact</a></li>
+                  <li><a href="/allProfessors">Faculty</a></li>
+                  <li><a href="news.html">News</a></li>
+                  <li><a href="contact.html">Contact</a></li>
                 </ul>
               </div>
             </div>
@@ -285,11 +310,11 @@
         </div>
       </footer>
     </div>
-    </div>
     <!-- END wrapper -->
 
     <script src="/Akash_css/js/scripts.min.js"></script>
     <script src="/Akash_css/js/main.min.js"></script>
     <script src="/Akash_css/js/custom.js"></script>
+    <script src="/Akash_css/js/contact.js"></script>
   </body>
 </html>

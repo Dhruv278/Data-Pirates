@@ -18,6 +18,10 @@ h6 {
 a {
   -webkit-transition: 0.3s all;
 }
+p{
+  font-family: Source Serif Pro,Georgia,Times,Times New Roman,serif!important;
+    /* line-height: 50px; */
+}
 @font-face {
   font-family: icomoon;
   src: url(../fonts/icomoon/icomoon.eot?1z9v6x);
@@ -2436,7 +2440,7 @@ a:hover {
   border: 2px solid #000;
 }
 .probootstrap-testimonial:before {
-  background: rgba(0, 0, 0, 0.7) !important;
+  background: black !important;
 }
 .probootstrap-testimonial .section-heading p {
   color: rgba(255, 255, 255, 0.9) !important;
