@@ -38,7 +38,10 @@ exports.GetAllStudents=catchAsync(async(req,res,next)=>{
         students
     })
 })
-
+exports.GetAllResearches=catchAsync(async(req,res,next)=>{
+    const researches=await Research.find();
+    res.status(200).render('AllResearches',{researches})
+})
 exports.getSingleResearch=catchAsync(async(req,res,next)=>{
     const id=req.params.id;
     const research=await Research.findById(id).populate('faculties').populate('students');

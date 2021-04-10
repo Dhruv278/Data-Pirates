@@ -37,8 +37,10 @@ app.post('/createProfessors',multer.uploadPhoto,ProfessorsController.addProfesso
 app.get('/allProfessors',ProfessorsController.getAllProfessors);
 app.post('/createResearch',ResearchController.CreateResearch);
 app.post('/CreateStudent',multer.uploadPhoto,ResearchController.CreateStudent);
-app.get('/researh/:id',ResearchController.getSingleResearch)
+app.get('/research/:id',ResearchController.getSingleResearch)
 app.get('/getAllStudent',ResearchController.GetAllStudents);
+app.get('/getAllReseaarches',ResearchController.GetAllResearches);
+app.get('/event',viewController.event);
 const port=process.env.PORT ||3000;
 
 

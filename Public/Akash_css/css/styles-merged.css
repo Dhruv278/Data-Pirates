@@ -2035,7 +2035,7 @@ pre code {
     width: 58.33333333%;
   }
   .col-md-6 {
-    width: 50%;
+    /* width: 50%; */
   }
   .col-md-5 {
     width: 41.66666667%;
@@ -12456,6 +12456,15 @@ Copyright (c) 2015 Daniel Eden
 .icon-user-tie:before {
   content: "\eaf7";
 }
+.icon-user-student:before {
+  content: "\eaf3";
+}
+/* .icon-user-single-quote:before {
+  content: "\eaf8";
+}
+.icon-user-single-quote:before {
+  content: "\eaf8";
+} */
 .icon-quotes-left:before {
   content: "\eaf8";
 }
@@ -13395,9 +13404,10 @@ Copyright (c) 2015 Daniel Eden
 .icon-onedrive2:before {
   content: "\ec30";
 }
-.icon-github2:before {
+.icon-github:before {
   content: "\ec31";
 }
+
 .icon-npm:before {
   content: "\ec32";
 }

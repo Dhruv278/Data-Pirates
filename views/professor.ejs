@@ -32,35 +32,39 @@
         <div class="container">
           <div class="navbar-header">
             <div class="btn-more js-btn-more visible-xs">
-              <a href="#"><i class="icon-dots-three-vertical "></i></a>
+              <a href="#"><i class="icon-dots-three-vertical"></i></a>
             </div>
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#navbar-collapse"
+              aria-expanded="false"
+              aria-controls="navbar"
+            >
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            
-               <!--mine-->
-               <a  href="/" class ="nav_heading" title="SCET"><img src="/Akash_css/img/logomain.jpg" style="
-                margin-top: 10px;
-                height: 66px;
-            "> | COMPUTER DEPARTMENT
-        </a>
-                <span class="v1"></span>
-                <span class="name"><b><a class="font-color-size" href="/">COMPUTER DEPARTMENT</a></b></span>
-                <!---->
+
+            <a  href="/" class ="nav_heading" title="SCET" style="color: black;font-size: 15px;font-weight: 600"><img src="/Akash_css/img/logomain.jpg" style="
+              margin-top: 10px;
+              height: 66px;
+              
+          " > | COMPUTER DEPARTMENT
+      </a>
           </div>
 
           <div id="navbar-collapse" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
               <li class="active"><a href="/">Home</a></li>
-              <li><a href="/research">Research</a></li>
+              <li><a href="/getAllReseaarches">Research</a></li>
               <li><a href="/allProfessors">Faculty</a></li>
               <li><a href="/event">Events</a></li>
-
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+              <!-- <li><a href="gallery.html">Gallery</a></li> -->
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
           </div>
         </div>
       </nav>
@@ -82,7 +86,7 @@
               <div class="probootstrap-flex-block">
                 <div class="probootstrap-text probootstrap-animate">
                   <h3>We Hired Certified Teachers For Our Students</h3>
-                  <p>“Teaching is a very noble profession that shapes the character, caliber, and future of an individual. If the people remember me as a good teacher that will be the biggest honour for me”  :-  A. P. J. Abdul Kalam</p>
+                  <p style="font-family: Source Serif Pro,Georgia,Times,Times New Roman,serif!important; line-height: 30px;">“Teaching is a very noble profession that shapes the character, caliber, and future of an individual. If the people remember me as a good teacher that will be the biggest honour for me”  :-  A. P. J. Abdul Kalam</p>
                   <!--<p><a href="#" class="btn btn-primary">Learn More</a></p>-->
                 </div>
                 <!--<div class="probootstrap-image probootstrap-animate" style="background-image: url(img/slider_3.jpg)">
@@ -109,12 +113,6 @@
                       <div class="text">
                         <h3><%=professor.name %></h3>
                           <p><b>Designation:</b> <%=professor.designation%><br><b>Qualification:</b> <%= professor.Qualification %><br><b>Experience:</b> <%= professor.experience %> years<br><b>Email:</b><%= professor.email %></p>
-                        <!--<ul class="probootstrap-footer-social">
-                          <li class="twitter"><a href="#"><i class="icon-twitter"></i></a></li>
-                          <li class="facebook"><a href="#"><i class="icon-facebook2"></i></a></li>
-                          <li class="instagram"><a href="#"><i class="icon-instagram2"></i></a></li>
-                          <li class="google-plus"><a href="#"><i class="icon-google-plus"></i></a></li>
-                        </ul>-->
                       </div>
                     </div>
                   </div>
@@ -128,27 +126,48 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <h2 class="probootstrap-animate" data-animate-effect="fadeInRight">Get your admission now!</h2>
-              <!--<a href="#" role="button" class="btn btn-primary btn-lg btn-ghost probootstrap-animate" data-animate-effect="fadeInLeft">Enroll</a>-->
+              <h2
+                class="probootstrap-animate"
+                data-animate-effect="fadeInRight"
+              >
+              <span class="probootstrap-icon">
+                <i class="icon-quotes-left"></i>
+              </span>SCET students create and apply knowledge by thinking and doing, preparing for leadership in a rapidly changing world. <span class="probootstrap-icon">
+                <i class="icon-quotes-right"></i>
+              </span>
+              </h2>
+
             </div>
           </div>
         </div>
-      </section>
+      </section>  
       <footer class="probootstrap-footer probootstrap-bg">
         <div class="container">
           <div class="row">
             <div class="col-md-4">
               <div class="probootstrap-footer-widget">
-                <h3>About CO Department</h3>
-                <p>The department imparts high quality technical education to its students with the help of its state-of-the-art computing facilities and highly qualified teaching staff as well as supporting staff. The department offers bachelor’s degree in computer engineering that covers the latest subjects in the variety of areas like computer hardware, software, networking, microprocessors, operating systems, database management, artificial intelligence, information security, web technologies etc.</p>
+                <img src="/Akash_css/img/logo_footer.jpeg" width="200" height="200"><br>
+                <br>
                 <h3>Social</h3>
                 <ul class="probootstrap-footer-social">
-                  <li><a href="#"><i class="icon-twitter"></i></a></li>
-                  <li><a href="#"><i class="icon-facebook"></i></a></li>
-                  <li><a href="#"><i class="icon-github"></i></a></li>
-                  <li><a href="#"><i class="icon-dribbble"></i></a></li>
-                  <li><a href="#"><i class="icon-linkedin"></i></a></li>
-                  <li><a href="#"><i class="icon-youtube"></i></a></li>
+                  <li>
+                    <a href="https://twitter.com/ScetSurat?s=08" target="_blank"><i class="icon-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/SCET.Social" target="_blank"><i class="icon-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="icon-github"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="icon-dribbble"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="icon-linkedin"></i></a>
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/channel/UCXy4Mvs64zNQl407vInl6fw" target="_blank"><i class="icon-youtube"></i></a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -156,11 +175,11 @@
               <div class="probootstrap-footer-widget">
                 <h3>Links</h3>
                 <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Courses</a></li>
-                  <li><a href="#">Teachers</a></li>
-                  <li><a href="#">News</a></li>
-                  <li><a href="#">Contact</a></li>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="courses.html">Research</a></li>
+                  <li><a href="teachers.html">Faculty</a></li>
+                  <li><a href="news.html">News</a></li>
+                  <li><a href="contact.html">Contact</a></li>
                 </ul>
               </div>
             </div>
@@ -168,31 +187,44 @@
               <div class="probootstrap-footer-widget">
                 <h3>Contact Info</h3>
                 <ul class="probootstrap-contact-info">
-                  <li><i class="icon-location2"></i> <span>Sarvajanik College of Engineering and      Technology,Dr. R.K. Desai Marg,
-                    Opp. Mission Hospital,
-                    Athwalines,
-                    Surat – 395001
-                    Gujarat,
-                    India</span></li>
+                  <li>
+                    <i class="icon-location2"></i>
+                    <span
+                      >Sarvajanik College of Engineering and Technology,Dr. R.K.
+                      Desai Marg, Opp. Mission Hospital, Athwalines, Surat –
+                      395001 Gujarat, India
+                    </span>
+                  </li>
                   <li><i class="icon-mail"></i><span>info@scet.ac.in</span></li>
-                  <li><i class="icon-phone2"></i><span>91-0261-2240146/47/48 </span></li>
+                  <li>
+                    <i class="icon-phone2"></i
+                    ><span>+91-0261-2240146/47/48</span>
+                  </li>
                 </ul>
               </div>
             </div>
-           
           </div>
           <!-- END row -->
-          
         </div>
 
-         <div class="probootstrap-copyright">
+        <div class="probootstrap-copyright">
           <div class="container">
             <div class="row">
               <div class="col-md-8 text-left">
-                <p>&copy; 2021 All Rights Reserved. Designed &amp; Developed by Team Cobweb</p>
+                <p>
+                  &copy; 2021
+                  <!-- <a href="https://probootstrap.com/">ProBootstrap:Enlight</a>. -->
+                  All Rights Reserved. Designed and Developed
+                  by Team DATA pirates
+                  <!-- <a href="https://probootstrap.com/">ProBootstrap.com</a> -->
+                </p>
               </div>
               <div class="col-md-4 probootstrap-back-to-top">
-                <p><a href="#" class="js-backtotop">Back to top <i class="icon-arrow-long-up"></i></a></p>
+                <p>
+                  <a href="#" class="js-backtotop"
+                    >Back to top <i class="icon-arrow-long-up"></i
+                  ></a>
+                </p>
               </div>
             </div>
           </div>

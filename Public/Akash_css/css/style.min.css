@@ -12,7 +12,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Raleway, Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
 }
 .probootstrap-header-top,
 a {
@@ -918,8 +918,7 @@ a:hover {
 .section-heading h2 {
   line-height: 40px;
   font-size: 40px;
-  font-weight: 1000;
-  text-shadow:1px 1px red;
+  font-weight: 300;
 }
 @media screen and (max-width: 768px) {
   .section-heading h2 {

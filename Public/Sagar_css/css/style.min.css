@@ -567,7 +567,7 @@ only screen and (min-resolution:2dppx) {
 
 .probootstrap-navbar .navbar-nav > li.active > a {
     background: 0 0 !important;
-    color: #49D292 !important
+    color: #494bd2 !important
 }
 
 .probootstrap-navbar .navbar-nav .dropdown li.active > a,

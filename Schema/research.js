@@ -10,6 +10,7 @@ const ResearchSchema = mongoose.Schema({
       
 
     },
+    date:String,
     discription:String,
     photo:String,
     department:String,

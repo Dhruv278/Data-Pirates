@@ -2,7 +2,7 @@
 .flexslider-2,
 .flexslider-2 .slides > li,
 .slider-height {
-  height: 600px;
+  height: 400px;
 }
 .flexslider-2 {
   z-index: 2;
@@ -118,7 +118,7 @@
 }
 
 .course-section-1 {
-  background-color: #f7f7f7;
+  background-color: #e3e1e1;
 }
 
 .change {
@@ -127,4 +127,32 @@
 
 .h3-about {
   margin: 0px 17px 17px;
+  font-size: 21px;
+}
+
+.index-about{
+  text-align: center;
+  font-size: 19px;
+}
+
+.research-para{
+  text-align: center;
+}
+
+/* .navbar-header .navbar .navbar-collapse{
+  position: fixed;
+  width: 100%;
+} */
+
+.vertical-line{
+  /* border-left: 6px solid rgba(93, 82, 251, 0.774) ; */
+  float: left;
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(to top, #e2e2e2, #c2c2c2, #e2e2e2);
+  /* height: 130px; */
+  border-image-slice: 1;
+  border-bottom: none;
+  border-right: none;
+  border-top: none;
 }
