@@ -916,7 +916,7 @@ a:hover {
   }
   .section-heading h1 {
     font-size: 24px;
-    line-height: 24px;
+    /* line-height: 24px; */
   }
 }
 .section-heading h2 {
