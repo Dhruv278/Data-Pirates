@@ -9,7 +9,7 @@ document.getElementById('submit').addEventListener('click',async(e)=>{
     contact.subject=document.getElementById('subject').value;
     contact.message=document.getElementById('message').value;
     console.log(contact)
-    const response = await fetch('http://127.0.0.1:3000/sendMail', {
+    const response = await fetch('/sendMail', {
         method: 'POST',
         headers: {"Content-type": "application/json; charset=UTF-8"},
         body:JSON.stringify(contact)
