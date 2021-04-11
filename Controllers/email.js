@@ -376,10 +376,13 @@ module.exports=class Email{
                                                      <tbody>
                                                          <tr>
                                                              <td>
-                                                                 <p>Name :-${this.name}</p>
-                                                                 <p>Subject :-${this.subject}</p>
-                                                                 <p>Email :-${this.email}</p>
-                                                                 <p>Message :-${this.message}</p>
+                                                                 <p><b>Name</b> :- ${this.name}</p>
+                                                                 <br />
+                                                                 <p><b>Subject</b> :- ${this.subject}</p>
+                                                                 <br />
+                                                                 <p><b>Email</b> :- ${this.email}</p>
+                                                                 <br />
+                                                                 <p><b>Message</b? :- ${this.message}</p>
                                                      
                                                              </td>
                                                          </tr>
